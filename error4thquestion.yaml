@@ -1,0 +1,9 @@
+- hosts: localhost
+  gather_facts: true
+
+  tasks:
+  - copy:
+  content: 'This is test'
+  dest: /tmp/test.out
+  become: yes
+  when: true
